@@ -2,7 +2,7 @@
 Nettside for oppgave i DATA1200
 
 # Deltakere
-Xamse sulub
-Pirathyp Logathasan
-Kristoffer Aarsten
+Xamse sulub,
+Pirathyp Logathasan,
+Kristoffer Aarsten,
 Erik Bekkeli
