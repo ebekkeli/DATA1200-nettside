@@ -1,10 +1,15 @@
+body {
+    margin: 0px;
+}
 header {
     background-color: #00eeff;
-    padding: 20px;
+    padding-top: 20px;
 }
 .logo {
     width: 200px;
     margin-left: 550px;
+    position: relative;
+    display: inline;
 }
 .search {
     display: block;
@@ -45,4 +50,37 @@ header {
 }
 .dropDown:hover .dropDownContent {
     display: block;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+footer {
+    background-color: #00eeff;
+    padding-top: 20px;
+    padding-bottom: 500px;
+}
+.footerTitle {
+    margin-left: 550px;
+    display: inline-block;
+}
+.nyhetsBrev {
+    float: right;
+    margin-right: 550px;
+}
+.logoFooter {
+    margin-left: 550px;
+    float: left;
+    display: flex;
+}
+.footerLine {
+    margin-bottom: 80px;
+}
+.addressTlf {
+    float: left;
+    
 }
