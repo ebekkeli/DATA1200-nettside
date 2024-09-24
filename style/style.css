@@ -7,7 +7,7 @@ header {
 }
 .logo {
     width: 200px;
-    margin-left: 550px;
+    margin-left: 20vw;
     position: relative;
     display: inline;
 }
@@ -19,7 +19,7 @@ header {
 .dropDown {
     position: relative;
     float: right;
-    margin-right: 550px;
+    margin-right: 20vw;
 }
 .dropDownButton {
     background-color: #3c0064;
@@ -56,8 +56,8 @@ h1 {
 }
 p {
     text-align: center;
-    margin-left: 550px;
-    margin-right: 550px;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 footer {
     background-color: #00eeff;
@@ -65,15 +65,17 @@ footer {
     padding-bottom: 500px;
 }
 .footerTitle {
-    margin-left: 550px;
+    margin-left: 20vw;
     display: inline-block;
+    width: 20rem;
 }
 .nyhetsBrev {
     float: right;
-    margin-right: 550px;
+    margin-right: 20vw;
+    margin-top: 20px;
 }
 .logoFooter {
-    margin-left: 550px;
+    margin-left: 20vw;
     float: left;
     display: flex;
 }
@@ -82,5 +84,9 @@ footer {
 }
 .addressTlf {
     float: left;
-    
+}
+.contact {
+    color: black;
+    font-style: italic;
+    float: left;
 }
