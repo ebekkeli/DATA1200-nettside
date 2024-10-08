@@ -2,4 +2,4 @@
 Nettside for oppgave i DATA1200
 
 # Deltakere
-Xamse sulub, Pirathyp Logathasan, Erik Bekkeli
+Xamse sulub, Pirathyp Logathasan, Erik Bekkeli, Ahmed Taha Aziz
