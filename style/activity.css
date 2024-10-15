@@ -1,0 +1,16 @@
+.main-nav{
+    position: absolute; top: 2vw; right: 0vw; 
+    display: flex;
+    gap: 5vw;
+;
+    
+    a:link {color: rgb(6, 6, 6);}
+a:visited {color:black}
+a:hover {color:black}
+a:active {color:black}
+
+}
+
+.hike-icon{
+    width: 5vw;
+}
