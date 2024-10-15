@@ -1,16 +1,15 @@
-h1 {
-    margin-left: 20vw;
-}
-h4 {
-    margin-left: 20vw;
-}
-p {
-    margin-left: 20vw;
-}
 .infoGrid {
     display: grid;
-    grid-template-columns: 180px 180px 180px;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: 3vw;
     grid-gap: 5vw;
+    background-color: orange;
+    border: 3px solid black;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+.item {
+    margin-left: 2vw;
 }
 .a {
     grid-column-start: 1;
@@ -39,4 +38,13 @@ p {
 .g {
     grid-column-start: 3;
     grid-row-start: 2;
+}
+.matmodVideo {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 570px;
+    border: none;
 }
