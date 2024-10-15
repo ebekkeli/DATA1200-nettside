@@ -1,6 +1,11 @@
 .main-nav{
-    position: absolute; top: 0px; right: 0px; 
-    
+    position: absolute; top: 0vw; right: 0vw; 
+
+    a:link {color: rgb(6, 6, 6);}
+a:visited {color:black}
+a:hover {color:black}
+a:active {color:black}
+
 }
 
 .hike-icon{
