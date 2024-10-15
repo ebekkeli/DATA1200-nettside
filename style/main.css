@@ -14,7 +14,7 @@ header {
 .search {
     display: block;
     float: right;
-    margin-right: 50px;
+    margin-right: 5vw;
 }
 .dropDown {
     position: relative;
@@ -50,13 +50,6 @@ header {
 }
 .dropDown:hover .dropDownContent {
     display: block;
-}
-h1 {
-    margin-left: 20vw;
-}
-p {
-    margin-left: 20vw;
-    margin-right: 20vw;
 }
 footer {
     background-color: #00eeff;
