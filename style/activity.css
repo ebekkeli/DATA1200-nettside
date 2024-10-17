@@ -1,39 +1,84 @@
-.main-nav{
-    position: absolute; top: 0px; right: 0px;  
-    cursor: pointer;
-    text-decoration: underline;
+body {
+    margin: 3px;
 }
+
+.UTlogo {
+    width: 9vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style-type:none;
+    background-color: rgb(0, 0, 25);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    margin-bottom: 20vw;
+    margin-right: 4vw;
+    margin-left: 30vw;
+    margin-top: -100px;
+  
+
+
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+   
+
+
+
+}
+.navbar a:hover{
+    background-color: rgb(22, 22, 168);
+}
+
+.navbar li {
+    float: right;
+    
+}
+
+
+
+
+
 
 .hike-icon{
     width: 5vw;
 }
 
 .image-container {
-width: 100%;
-height: 100%;
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-justify-content: center;
-padding: 10px;
-position: relative;
-min-width: 100vw;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    min-width: 100vw;
+    margin-right:0vw;
 }
 
 .image {
-width: 30vw;
-height: 20vw;
-border: 5px solid rgb(82, 133, 158);
-object-fit: cover;
-border-radius: 1vw;
-cursor: pointer;
-
+    width: 28vw;
+    height: 20vw;
+    border: 5px solid rgb(82, 133, 158);
+    object-fit: cover;
+    border-radius: 1vw;
+    cursor: pointer;
 }
 
 .image:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
     transition: all 0.5s;
-    filter: brightness(0.5);
+    filter: brightness(1);
 }
 
 
