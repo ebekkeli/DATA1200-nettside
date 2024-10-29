@@ -24,18 +24,20 @@ body {
 }
 .navbar a{
     color: rgb(39, 39, 39);
+    text-decoration: underline;
     display: block;
     text-align: center;
     margin: 2vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    transition: underline 0.25s;
    
 
 
 
 }
-
+.navbar a:hover{
+    background-color: rgb(22, 22, 168);
+}
 
 .navbar li {
     float: right;
