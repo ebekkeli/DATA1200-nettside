@@ -25,7 +25,7 @@ body {
 .navbar a{
     color: rgb(39, 39, 39);
     text-decoration: underline;
-    display: none;
+    display: block;
     text-align: center;
     margin: 2vw;
     margin-left: 3vw;
