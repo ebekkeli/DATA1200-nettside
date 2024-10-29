@@ -2,6 +2,10 @@ body {
     margin: 3px;
 }
 
+header{
+    background-color: rgb(244, 243, 242);
+}
+
 .UTlogo {
     width: 9vw;
     border-radius: 2vw;
