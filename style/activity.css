@@ -1,59 +1,79 @@
-body {
-    margin: 3px;
-}
+/* For å få hovedbilde på header*/
+header.mainImage {}
 
+/* css-koden fremviser hovedbilde blir plassert på header. Bildet er hentet fra 
+https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-2398220/*/
+.mainImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+}
+/* Koden fremviser possisjoneringen til UTlogoen*/
 .UTlogo {
-    width: 6vw;
-    border-radius: 2vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 2vh;
+    width: 9%;
+    border-radius: 10px;
     cursor: pointer;
 }
-
+/* hele .navbar koden viser endringer og opprettelsen av nav bar. 
+kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 .navbar ul {
-    list-style-type:none;
-    background-color: rgb(244, 243, 242);
-    padding: 0px;
-    margin: 0px;
+    list-style-type: none;
+    padding:0;
+    padding-bottom: 5vh;
+    margin:0vw;
+    margin-left: 12vw;
     overflow: hidden;
-    margin-bottom: 20vw;
-    margin-right: 4vw;
-    margin-left: 30vw;
-    margin-top: -100px;
-  
-
-
 }
-.navbar a{
-    color: rgb(39, 39, 39);
-    text-decoration: underline;
-    display: block;
+.navbar a {
+    color:white;
+    font-family: Lato, sans-serif;
+    font-weight:600;
+    font-size: 1rem;
+    text-decoration:none;
+    padding: 2vw;
+    padding-left: 2vw;
+    display: block; 
     text-align: center;
-    margin: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-   
-
-
-
+    border-radius: 5px;
+    margin-top: 1vh;
 }
-.navbar a:hover{
-    background-color: rgb(22, 22, 168);
+/* Css-koden viser hover effect til menu baren når du hoverer over den*/
+.navbar a:hover {
+    background-color: rgba(0, 255, 170, 0.271);
+    text-decoration: underline;
+    transition: all 0.3s;
 }
-
+/*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
 .navbar li {
     float: right;
-    
+    padding: 3px;
+    margin-top: 1vh;
 }
-
-
-
-
-
-
-.hike-icon{
-    width: 5vw;
+/* endring på h1 og font*/
+h1 {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 9vh;
 }
+/* her er bare endring på fargen til author*/
+.author {
+    color: white;
+} 
 
 .image-container {
+
+    bottom: -4000px;
     width: 100%;
     height: 200%;
     display: flex;
