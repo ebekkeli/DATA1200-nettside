@@ -1,3 +1,9 @@
+/*
+*/
+/*MAIN*/
+/*
+*/
+
 body {
     margin: 0px;
 }
@@ -5,6 +11,21 @@ header {
     background-color: #00eeff;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.17rem;
+}
+h4 {
+    font-size: 1rem;
 }
 .text {
     margin-left: 20vw;
@@ -52,7 +73,6 @@ header {
 .dropDownContent a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
 }
 .dropDownContent a:hover {
@@ -91,8 +111,6 @@ footer {
 .footerLine {
     margin-bottom: 80px;
 }
-.addressTlf {
-}
 .link {
     color: black;
     font-style: italic;
@@ -111,4 +129,62 @@ footer {
     font-size: 1.2rem;
     display: flex;
     margin-left: 22vw;
+}
+
+
+/*
+*/
+/*INDEX*/
+/*
+*/
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: 3vw;
+    grid-gap: 5vw;
+    background-color: orange;
+    border: 3px solid black;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+.item {
+    margin-left: 2vw;
+}
+.a {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.b {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.c {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.d {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+.e {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.f {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.g {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.matmodVideo {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 570px;
+    border: none;
 }
