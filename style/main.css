@@ -138,6 +138,7 @@ footer {
 /*
 */
 
+/*Brukes for grid elementer på index siden slik at de plasseres riktig*/
 .infoGrid {
     display: grid;
     grid-template-columns: 10vw 10vw 10vw;
@@ -148,9 +149,11 @@ footer {
     margin-left: 18vw;
     margin-right: 18vw;
 }
+/*marginer for hver item i grid*/
 .item {
     margin-left: 2vw;
 }
+/*alle items i grid gis et navn a -> g*/
 .a {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -179,6 +182,8 @@ footer {
     grid-column-start: 3;
     grid-row-start: 2;
 }
+
+/*brukes for inline frame video i index.html*/
 .matmodVideo {
     display: block;
     margin-top: 20px;
