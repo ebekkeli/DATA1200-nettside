@@ -17,7 +17,7 @@ https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-239
     position: absolute;
     top:0;
     left: 0;
-    margin-left: 20px;
+    margin-left: 1vw;
     margin-top: 2vh;
     width: 9%;
     border-radius: 10px;
@@ -30,17 +30,19 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
     padding:0;
     padding-bottom: 5vh;
     margin:0vw;
-    margin-left: 12vw;
+    margin-left: 8vw;
     overflow: hidden;
+    
 }
 .navbar a {
     color:white;
     font-family: Lato, sans-serif;
-    font-weight:600;
+    font-weight:500;
     font-size: 1rem;
     text-decoration:none;
     padding: 2vw;
-    padding-left: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     display: block; 
     text-align: center;
     border-radius: 5px;
@@ -55,8 +57,8 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 /*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
 .navbar li {
     float: right;
-    padding: 3px;
     margin-top: 1vh;
+    margin: 0.5px;
 }
 /* endring på h1 og font*/
 h1 {
@@ -71,36 +73,45 @@ h1 {
     color: white;
 } 
 
-.image-container {
+body {
+    margin: 1vw;
+    padding: 0;
+}
 
-    bottom: -4000px;
-    width: 100%;
-    height: 200%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
+.image1 {
     position: relative;
-    min-width: 100vw;
-    margin-right:0vw;
+    width: 40%;
+    float: right;
+    margin-top: 20vh;
+    padding-bottom: 400px;
+    border-style: solid;
+    border-color: coral;
+}
+article {
+  margin-top: 80vh;
+  margin-right: 39vw;
+  border-style:solid;
+  border-color: rgb(55, 0, 255);
+
 }
 
-.image {
-    width: 28vw;
-    height: 20vw;
-    border: 5px solid rgb(82, 133, 158);
-    object-fit: cover;
-    border-radius: 1vw;
-    cursor: pointer;
+h2 {
+    border-style: solid;
+    border-color: coral;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    line-height: 1.5;
+    border-style:solid;
+    border-color: coral;
+
 }
+/*
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    border-style: solid;
+    border-color: coral;
+    line-height: 1.5;
 
-.image:hover {
-    transform: scale(1.4);
-    transition: all 0.5s;
-    filter: brightness(1);
 }
-
-
-
-
