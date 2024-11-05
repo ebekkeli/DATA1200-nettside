@@ -14,18 +14,26 @@ header {
 }
 p {
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
     font-size: 1.5rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h3 {
     font-size: 1.17rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h4 {
     font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .text {
     margin-left: 20vw;
@@ -47,6 +55,8 @@ h4 {
     width: 200px;
     border: none;
 }
+
+/*Drop down box oppi høyre i header*/
 .dropDown {
     position: relative;
     float: right;
@@ -81,6 +91,7 @@ h4 {
 .dropDown:hover .dropDownContent {
     display: block;
 }
+
 footer {
     background-color: #00eeff;
     padding-top: 20px;
@@ -118,7 +129,7 @@ footer {
 .footerNavigationLinks {
     float: right;
     margin-right: 20vw;
-    margin-top: -10vw;
+    margin-top: -220px;
 }
 .linkTo {
     color: black;
@@ -142,8 +153,9 @@ footer {
 .infoGrid {
     display: grid;
     grid-template-columns: 10vw 10vw 10vw;
-    grid-template-rows: 3vw;
-    grid-gap: 5vw;
+    grid-template-rows: 30px;
+    grid-column-gap: 5vw;
+    grid-row-gap: 60px;
     background-color: orange;
     border: 3px solid black;
     margin-left: 18vw;
@@ -192,4 +204,25 @@ footer {
     width: 66%;
     height: 570px;
     border: none;
+}
+/*dropdown elementer for informasjonselementene under grid*/
+.expandButtons {
+    margin-left: 20vw;
+}
+.dropdownImage {
+    width: 20px;
+}
+.expandA {
+    position: relative;
+}
+.clickShowContent {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+.clickShowContentTitle {
+    margin-left: 90px;
+    margin-top: -35px;
 }
