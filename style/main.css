@@ -168,7 +168,7 @@ footer {
 .item {
     margin-left: 2vw;
 }
-/*alle items i grid gis et navn a -> g*/
+/*alle items i grid gis et navn a -> g --- Brukes om igjen for alle grid i Studiets oppbygging*/
 .a {
     grid-column-start: 1;
     grid-row-start: 1;
