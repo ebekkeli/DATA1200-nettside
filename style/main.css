@@ -132,8 +132,11 @@ footer {
     margin-right: 20vw;
     margin-top: -220px;
 }
-.linkItalic {
+.italic {
     font-style: italic;
+}
+.bold {
+    font-weight: bold;
 }
 .studieLink {
     color: black;
