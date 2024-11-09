@@ -1,6 +1,5 @@
+
 /* For å få hovedbilde på header*/
-
-
 /* css-koden fremviser hovedbilde blir plassert på header. Bildet er hentet fra 
 https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-2398220/*/
 .mainImage {
@@ -27,70 +26,98 @@ https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-239
 kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 .navbar ul {
     list-style-type: none;
-    padding:0em;
-    padding-bottom: 5em;
-    margin:0em;
-    margin-left: 1em;
+    padding-bottom: 20px;
+    margin-left: 2.8em;
     overflow: hidden;
     
 }
 .navbar a {
     color:white;
     font-family: Lato, sans-serif;
+    font-size: 1rem;
     font-weight:600;
-    font-size: 0.6rem;
     text-decoration:none;
-    padding: 1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.6em;
     display: block; 
     text-align: center;
-    border-radius: 5px;
+    border-radius: 9px;
     margin-top: 0.2em;
     border-style: solid;
-    border-color: whitesmoke;
+    
 }
+/*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
+.navbar li {
+    float: right;
+    margin: 3px;
+}
+
 /* Css-koden viser hover effect til menu baren når du hoverer over den*/
 .navbar a:hover {
     background-color: rgba(0, 255, 170, 0.271);
     text-decoration: underline;
     transition: all 0.3s;
 }
-/*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
-.navbar li {
-    float: right;
-
-    margin-left: 0.1em;
-}
 /* endring på h1 og font*/
 h1 {
     color: white;
     font-family: Lato, sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
-    margin-top: 1em;
+    font-size: 3rem;
+    display: inline-block;
+  
 }
 /* her er bare endring på fargen til author*/
 .author {
     color: white;
     font-family: Lato, sans-serif;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
 } 
 
-.main-content {
-    padding-top:200px;
+/* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
+på toppen for å skille header med selve hovedteksten, margin-left for å possisjonere testen med bildene under, 
+tilslutt har det gjort endringer på selve teksten for å gjøre den mer tydelig for leseren å lese*/
+.into {
+    display: inline-block;
+    margin-top: 22em;
+    margin-left: 0.7em ;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    
 }
 
-.image1 {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 50%;
+/* i denne delen har vi lagt alle bildene i en container, og tilsatt flex og wrap for å få en smooth side 
+når man minsker siden, gap har blitt lagt til for å gi mellomrom mellom bildene. */
 
-    border-style: solid;
-    border-color: blue;
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* bildene her er barnet til foreldren (.image-content), vi har brukt flex-grow for å spesifisere 
+hvor mye bildene skal vokse. i flex-basis så spesifiserer vi at vi ønsker 300px lengde av bilde. Width, 
+etter størrelse, margin for å gi mellomrom bildene slik at bildene fyller siden, 
+istendenfor at det blir mye plass/rom rundt bildene.
+ border, raduis pluss farge for å fremvise bildene mer tydlig.*/
+
+.image { 
+    flex-grow: 1;
+    flex-basis: 300px;
+    width: 31% ;
+    margin: 5px;
+    border: 5px solid rgb(82, 133, 158);
+    object-fit: cover;
+    border-radius: 1em;
+}
 
 
+
+    
+/*
+.image:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
     
 
 }
