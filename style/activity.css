@@ -78,7 +78,7 @@ på toppen for å skille header med selve hovedteksten, margin-left for å possi
 tilslutt har det gjort endringer på selve teksten for å gjøre den mer tydelig for leseren å lese*/
 .into {
     display: inline-block;
-    margin-top: 22em;
+    margin-top: 30em;
     margin-left: 0.7em ;
     font-family: Lato, sans-serif;
     font-weight: 400;
