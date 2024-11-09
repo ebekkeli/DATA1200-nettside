@@ -139,10 +139,8 @@ footer {
     font-weight: bold;
 }
 .studieLink {
-    color: black;
     font-size: 1.2rem;
-    display: flex;
-    margin-left: 22vw;
+    margin-left: 21vw;
 }
 
 
@@ -187,7 +185,6 @@ footer {
     width: 60vw;
 }
 .clickShowContent {
-    background-color: #fff;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 18px;
