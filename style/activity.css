@@ -112,12 +112,90 @@ istendenfor at det blir mye plass/rom rundt bildene.
 }
 
 
-
     
 /*
 .image:hover {
     transform: scale(1.2);
-    transition: all 0.5s;
+    transition: all 0.5s;*/
     
-
-}
+   
+    .footer-section {
+        background-color: darkgreen; 
+        color: white; 
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    .footer-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .content-links, .about-links {
+        text-align: left;
+    }
+    
+    .footer-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-info ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-info li {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .footer-info a {
+        color: white; 
+        text-decoration: none;
+    }
+    
+    .footer-info a:hover {
+        text-decoration: underline; 
+    }
+    
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+        color: lightgray; 
+    }
+    
+    .footer-bottom .version {
+        margin-top: 5px;
+    }
+    
+    .scroll-top-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: #006747; 
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .scroll-top-button:hover {
+        background-color: #004f35; 
+    }
+    
