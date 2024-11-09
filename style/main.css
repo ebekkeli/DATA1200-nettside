@@ -175,14 +175,28 @@ footer {
 }
 /*dropdown elementer for informasjonselementene under grid*/
 .expandButtons {
-    margin-left: 20vw;
+    margin-left: 30vw;
+}
+.expand {
+    position: relative;
+    width: 40vw;
+}
+/*utvider expand elementene når skjermen blir smalere enn 1000px*/
+@media only screen and (max-width: 1000px) {
+    .expandButtons {
+        margin-left: 20vw;
+    }
+    .expand {
+        width: 60vw;
+    }
 }
 .dropdownImage {
     width: 15px;
 }
-.expand {
-    position: relative;
-    width: 60vw;
+.smallDropdownImage {
+    width: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 .clickShowContent {
     padding-left: 16px;
@@ -198,6 +212,13 @@ footer {
     display: none;
     margin-left: 2vw;
 }
+.secondExpandContent {
+    display: none;
+    margin-left: 2vw;
+}
 .expand:hover .expandContent {
+    display: block;
+}
+.secondExpand:hover .secondExpandContent {
     display: block;
 }
