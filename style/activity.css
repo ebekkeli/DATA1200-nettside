@@ -1,21 +1,21 @@
 
+body {
+    margin: 0;
+    padding: 0; 
+}
+html {
+    background-color: lightblue;
+}
+
+
 /* For å få hovedbilde på header*/
 /* css-koden fremviser hovedbilde blir plassert på header. Bildet er hentet fra 
 https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-2398220/*/
-.mainImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
+
+
 /* Koden fremviser possisjoneringen til UTlogoen*/
 .UTlogo {
     position: absolute;
-    top:0;
-    left: 0;
     margin-left: 0.5em;
     margin-top: 0.5em;
     width: 9%;
@@ -24,31 +24,34 @@ https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-239
 }
 /* hele .navbar koden viser endringer og opprettelsen av nav bar. 
 kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
-.navbar ul {
+.navbar ul { 
     list-style-type: none;
-    padding-bottom: 20px;
-    margin-left: 2.8em;
     overflow: hidden;
-    
+    margin: 0;
+    background-color: #004f35; 
+
 }
+
 .navbar a {
+    display: flex;
+    flex-wrap: wrap;
     color:white;
     font-family: Lato, sans-serif;
     font-size: 1rem;
     font-weight:600;
     text-decoration:none;
     padding: 0.6em;
-    display: block; 
+    display: block;
     text-align: center;
     border-radius: 9px;
     margin-top: 0.2em;
     border-style: solid;
-    
 }
 /*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
 .navbar li {
     float: right;
     margin: 3px;
+
 }
 
 /* Css-koden viser hover effect til menu baren når du hoverer over den*/
@@ -57,28 +60,58 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
     text-decoration: underline;
     transition: all 0.3s;
 }
+
+
+.mainImage {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
 /* endring på h1 og font*/
 h1 {
     color: white;
     font-family: Lato, sans-serif;
     font-weight: 400;
-    font-size: 3rem;
-    display: inline-block;
-  
+    font-size: 2.5rem;
+    margin-left: 0.4em;
+    position:absolute;
+    top: 45%;
+    
 }
 /* her er bare endring på fargen til author*/
 .author {
     color: white;
     font-family: Lato, sans-serif;
+    margin-left: 0.7em;
     font-size: 1.5rem;
+    position:absolute;
+    bottom: 30%;
 } 
+
+@media (min-width: 344px) and (max-width: 1368px) {
+    h1 {
+        position: absolute;
+        top: 23%;
+        font-size: 1.5rem;
+    }
+    .author {
+        position: absolute;
+        top: 34%;
+        font-size: 1rem;
+    }
+}
+
+
 
 /* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
 på toppen for å skille header med selve hovedteksten, margin-left for å possisjonere testen med bildene under, 
 tilslutt har det gjort endringer på selve teksten for å gjøre den mer tydelig for leseren å lese*/
+
 .into {
     display: inline-block;
-    margin-top: 30em;
     margin-left: 0.7em ;
     font-family: Lato, sans-serif;
     font-weight: 400;
@@ -93,6 +126,7 @@ når man minsker siden, gap har blitt lagt til for å gi mellomrom mellom bilden
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-right: 10px;
 }
 
 /* bildene her er barnet til foreldren (.image-content), vi har brukt flex-grow for å spesifisere 
@@ -120,7 +154,7 @@ istendenfor at det blir mye plass/rom rundt bildene.
     
    
     .footer-section {
-        background-color: darkgreen; 
+        background-color: #004f35;
         color: white; 
         padding: 40px 20px;
         display: flex;
@@ -186,8 +220,10 @@ istendenfor at det blir mye plass/rom rundt bildene.
         bottom: 20px;
         right: 20px;
         background-color: #006747; 
-        border: none;
+        border-style: solid;
+        border-color: white;
         border-radius: 5px;
+    
         color: white;
         padding: 10px 15px;
         cursor: pointer;
