@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style/main.css">
+    <script src="script/onclick.js"></script>
     <meta charset="utf-8"> 
 </head>
 <html lang="no">
@@ -22,14 +23,15 @@
         </section>
         <input type="text" placeholder="søk" class="search">
         <!--Link til studieoversikt under Oslomet logo-->
-        <a href="https://oslomet.no/studier/studieoversikt" class="studieLink">Studieoversikt</a>
+        <p><a href="https://oslomet.no/studier/studieoversikt" class="studieLink link bold">Studieoversikt</a></p>
     </header>
     <body>
         
         <!--Inline Frame som brukes for å vise til nettsted for MatMod video i nettsiden vår.
-        Gjorde det slik fordi vi ikke klarte å laste ned videoen.-->
+        Gjorde det slik fordi vi ikke klarte å laste ned videoen.
+        "Browser not compatible" vises hvis inline frame ikke fungerer i brukeren sin nettleser-->
         <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" 
-        class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo"></iframe>
+        class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo">Browser not compatible</iframe>
         
         <!--Tittel-->
         <h1 class="text">
@@ -38,34 +40,33 @@
         <h2 class="text">
             Bachelorprogram
         </h2>
-        <!--Grid som informerer om kursets viktigste info-->
+        <!--Grid som informerer om kursets info-->
         <section class="infoGrid">
-
-         <section class="item a">
+         <section class="item">
             <h3>Studiested</h3>
             <p>Pilestredet i Oslo</p>
          </section>
-         <section class="item b">
+         <section class="item">
             <h3>Varighet</h3>
             <p>3 år</p>
          </section>
-         <section class="item c">
+         <section class="item">
             <h3>Omfang</h3>
             <p>heltid</p>
          </section>
-         <section class="item d">
+         <section class="item">
             <h3>Studiepoeng</h3>
             <p>180</p>
          </section>
-         <section class="item e">
+         <section class="item">
             <h3>Studiestart</h3>
             <p>August</p>
          </section>
-         <section class="item f">
+         <section class="item">
             <h3>Undervisningsspråk</h3>
             <p>Norsk<br>Engelsk</p>
          </section>
-         <section class="item g">
+         <section class="item">
             <h3>Studieplasser</h3>
             <p>40</p>
          </section>
@@ -81,13 +82,13 @@
         <section class="expandButtons">
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></div>
                 <h2 class="clickShowContentTitle">Opptakskrav og poeng</h2>
                 <section class="expandContent">
                     <p>For å søke på dette programmet må du ha</p>
                     <ul>
                         <li>
-                            <p><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/" class="link">generell studiekompetanse (samordnaopptak.no)</a> eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior" class="link">oppfylle kravene til realkompetanse</a></p>
+                            <p><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/" class="link bold">generell studiekompetanse (samordnaopptak.no)</a> eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior" class="link bold">oppfylle kravene til realkompetanse</a></p>
                         </li>
                         <li>
                             <p>matematikk R1 og R2</p>
@@ -97,34 +98,90 @@
                         </li>
                     </ul>
                     <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</p>
-                    <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior" class="link">bestått ettårig forkurs for ingeniørutdanning.</a></p>
+                    <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior" class="link bold">bestått ettårig forkurs for ingeniørutdanning.</a></p>
                 </section>
                 <hr>
 
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Slik søker du</h2>
                 <section class="expandContent">
-
+                    <p>Du søker på Samordna opptak med studiekode 215 503.</p>
+                    <ul>
+                        <li>
+                            <p>15. april: ordinær søknadsfrist</p>
+                        </li>
+                        <li>
+                            <p>1. mars: frist for enkelte søkere</p>
+                        </li>
+                    </ul>
+                    <p><a href="1. mars: frist for enkelte søkere" class="link bold">Mer om å søke på bachelor.</a></p>
                 </section>
                 <hr>
 
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Hva lærer du?</h2>
                 <section class="expandContent">
+                    <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.</p>
+                    <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
+                    <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å få en felles forståelse av tematikken.</p>
+                    <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.</p>
+                    <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
+                    
+                    <section class="secondExpand">
+                        <div class="clickShowContent">
+                            <img src="media/dropdown-circle.svg" alt="expandbutton" class="smallDropdownImage">
+                        </div>
+                        <h3 class="clickShowContentTitle">Statistiske og datadrevne metoder</h3>
+                        <section class="secondExpandContent">
+                            <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
+                            <p>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</p>
+                        </section>
+                    </section>
 
+
+                    <section class="secondExpand">
+                        <div class="clickShowContent">
+                            <img src="media/dropdown-circle.svg" alt="expandbutton" class="smallDropdownImage">
+                        </div>
+                        <h3 class="clickShowContentTitle">Vitenskapelige beregninger</h3>
+                        <section class="secondExpandContent">
+                            <p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.</p>
+                            <p>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p>
+                        </section>
+                    </section>
+
+
+                    <section class="secondExpand">
+                        <div class="clickShowContent">
+                            <img src="media/dropdown-circle.svg" alt="expandbutton" class="smallDropdownImage">
+                        </div>
+                        <h3 class="clickShowContentTitle">Matematikk og fysikk</h3>
+                        <section class="secondExpandContent">
+                            <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens.</p>
+                            <p>Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.</p>
+                            <p>I fysikk lærer du om termodynamikk og statistisk fysikk.</p>
+                        </section>
+                    </section>
+                    <p><a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST" class="link bold">Se programplan på student.oslomet.no</a></p>
                 </section>
                 <hr>
 
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Studiets oppbygging</h2>
                 <section class="expandContent">
 
@@ -134,7 +191,7 @@
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></div>
                 <h2 class="clickShowContentTitle">Hvordan foregår undervisningen?</h2>
                 <section class="expandContent">
 
@@ -144,7 +201,9 @@
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Hva koster det?</h2>
                 <section class="expandContent">
 
@@ -154,7 +213,9 @@
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Hva kan du jobbe som?</h2>
                 <section class="expandContent">
 
@@ -164,7 +225,9 @@
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Utveksling</h2>
                 <section class="expandContent">
 
@@ -174,7 +237,9 @@
             </section>
             <section class="expand">
                 <hr>
-                <button class="clickShowContent"><img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage"></button>
+                <div class="clickShowContent">
+                    <img src="media/dropdown-circle.svg" alt="expandbutton" class="dropdownImage">
+                </div>
                 <h2 class="clickShowContentTitle">Videre studiemuligheter ved OsloMet</h2>
                 <section class="expandContent">
 
@@ -182,7 +247,6 @@
                 <hr>
             </section>
         </section>
-
     </body>
     <footer>
         
@@ -215,17 +279,17 @@
     
         <!--Footer navigasjonslinker-->
         <section class="footerNavigationLinks text">
-            <a class="linkTo" href="https://oslomet.no">English</a><br>
-            <a class="linkTo" href="https://oslomet.no">Alumni</a><br>
-            <a class="linkTo" href="https://oslomet.no">Ansatteoversikt</a><br>
-            <a class="linkTo" href="https://oslomet.no">Arrangementoversikt</a><br>
-            <a class="linkTo" href="https://oslomet.no">For ansatte</a><br>
-            <a class="linkTo" href="https://oslomet.no">For studenter</a><br>
-            <a class="linkTo" href="https://oslomet.no">Ledige stillinger</a><br>
-            <a class="linkTo" href="https://oslomet.no">Personvernserklæring og informasjonskapslar</a><br>
-            <a class="linkTo" href="https://oslomet.no">Pressekontakt</a><br>
-            <a class="linkTo" href="https://oslomet.no">Tilgjengeligheitserklæring</a><br>
-            <a class="linkTo" href="https://oslomet.no">Admin</a>
+            <a class="link italic" href="https://oslomet.no">English</a><br>
+            <a class="link italic" href="https://oslomet.no">Alumni</a><br>
+            <a class="link italic" href="https://oslomet.no">Ansatteoversikt</a><br>
+            <a class="link italic" href="https://oslomet.no">Arrangementoversikt</a><br>
+            <a class="link italic" href="https://oslomet.no">For ansatte</a><br>
+            <a class="link italic" href="https://oslomet.no">For studenter</a><br>
+            <a class="link italic" href="https://oslomet.no">Ledige stillinger</a><br>
+            <a class="link italic" href="https://oslomet.no">Personvernserklæring og informasjonskapslar</a><br>
+            <a class="link italic" href="https://oslomet.no">Pressekontakt</a><br>
+            <a class="link italic" href="https://oslomet.no">Tilgjengeligheitserklæring</a><br>
+            <a class="link italic" href="https://oslomet.no">Admin</a>
 
         </section>
     </footer>
