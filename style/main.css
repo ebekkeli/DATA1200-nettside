@@ -215,6 +215,9 @@ footer {
 .dropdownImage {
     width: 15px;
 }
+.smallDropdownImage {
+    width: 10px;
+}
 .expand {
     position: relative;
     width: 60vw;
