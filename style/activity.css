@@ -51,7 +51,6 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 .navbar li {
     float: right;
     margin: 3px;
-
 }
 
 /* Css-koden viser hover effect til menu baren når du hoverer over den*/
@@ -68,42 +67,33 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 }
 
 
+@media (min-width: 344px) and (max-width: 1368px) {
+    .title {
+        position: absolute;
+        top: 60%;
+    }
+}
 
-
-/* endring på h1 og font*/
-h1 {
+/* Endringer gjort for å posisjonere overskriften og author til innholdet*/
+.title {
+   
+   margin-left: 0.4em;
+   border-style: solid;
+   border-color: red;
+   font-family: Lato, sans-serif;
+}
+/*størrelse og farge gjort i forbindelse med hovedtitelen til siden*/
+.title h1 {
+    display: block;
     color: white;
-    font-family: Lato, sans-serif;
     font-weight: 400;
     font-size: 2.5rem;
-    margin-left: 0.4em;
-    position:absolute;
-    top: 45%;
-    
 }
-/* her er bare endring på fargen til author*/
-.author {
-    color: white;
-    font-family: Lato, sans-serif;
-    margin-left: 0.7em;
+/*størrelse og farge gjort i forbindelse med author til siden*/
+.title a {
     font-size: 1.5rem;
-    position:absolute;
-    bottom: 30%;
-} 
-
-@media (min-width: 344px) and (max-width: 1368px) {
-    h1 {
-        position: absolute;
-        top: 23%;
-        font-size: 1.5rem;
-    }
-    .author {
-        position: absolute;
-        top: 34%;
-        font-size: 1rem;
-    }
+    color: white;
 }
-
 
 
 /* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
