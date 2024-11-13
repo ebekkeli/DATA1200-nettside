@@ -163,17 +163,20 @@ footer {
 */
 
 /*Brukes for grid elementer på index siden slik at de plasseres riktig*/
+.marginGrid {
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
 .infoGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background-color: orange;
+    background-color: lightblue;
     border: 3px solid black;
-    margin-left: 18vw;
-    margin-right: 18vw;
 }
 /*marginer for hver item i grid*/
 .item {
     margin-left: 2vw;
+    max-width: 200px;
 }
 
 /*brukes for inline frame video i index.html*/
