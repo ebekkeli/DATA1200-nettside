@@ -216,7 +216,7 @@ footer {
     margin-top: -25px;
 }
 .expandContent {
-    display: none;
+    display: block; /*Display none for hover*/
     margin-left: 2vw;
 }
 .secondExpandContent {
