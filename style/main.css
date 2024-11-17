@@ -169,19 +169,23 @@ footer {
 }
 .infoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 14vw));
     background-color: lightblue;
     padding-bottom: 20px;
 }
 /*marginer for hver item i grid*/
 .item {
     margin-left: 2vw;
-    max-width: 200px;
+    max-width: 100%;
     border-bottom: black solid 1px;
 }
 .fagInfo {
     float: right;
     margin-top: 20px;
+}
+.studiePoeng {
+    float: right;
+    margin-top: -34px;
 }
 
 /*brukes for inline frame video i index.html*/
