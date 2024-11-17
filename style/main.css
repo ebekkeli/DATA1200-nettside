@@ -223,19 +223,16 @@ footer {
     margin-left: 50px;
     margin-top: -25px;
 }
+
+/*"Onclick" krever java så hvidt jeg vet og "hover" er forferdelig å bruke her.
+Lar derfor disse elementene være "display: block"*/
 .expandContent {
-    display: block; /*Display none for hover*/
+    display: block; 
     margin-left: 2vw;
 }
 .secondExpandContent {
-    display: none;
+    display: block;
     margin-left: 2vw;
-}
-.expand:hover .expandContent {
-    display: block;
-}
-.secondExpand:hover .secondExpandContent {
-    display: block;
 }
 
 /*GitHub siden*/
