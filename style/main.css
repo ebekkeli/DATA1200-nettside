@@ -179,6 +179,10 @@ footer {
     max-width: 200px;
     border-bottom: black solid 1px;
 }
+.fagInfo {
+    float: right;
+    margin-top: 20px;
+}
 
 /*brukes for inline frame video i index.html*/
 .matmodVideo {
