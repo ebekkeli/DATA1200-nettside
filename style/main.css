@@ -5,8 +5,9 @@
 */
 
 body {
-    margin: 0px;
+    margin: 0;
 }
+
 header {
     background-color: lightblue;
     padding-top: 20px;
@@ -169,14 +170,23 @@ footer {
 }
 .infoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 14vw));
     background-color: lightblue;
-    border: 3px solid black;
+    padding-bottom: 20px;
 }
 /*marginer for hver item i grid*/
 .item {
     margin-left: 2vw;
-    max-width: 200px;
+    max-width: 100%;
+    border-bottom: black solid 1px;
+}
+.fagInfo {
+    float: right;
+    margin-top: 20px;
+}
+.studiePoeng {
+    float: right;
+    margin-top: -34px;
 }
 
 /*brukes for inline frame video i index.html*/
@@ -214,19 +224,16 @@ footer {
     margin-left: 50px;
     margin-top: -25px;
 }
+
+/*"Onclick" krever java så hvidt jeg vet og "hover" er forferdelig å bruke her.
+Lar derfor disse elementene være "display: block"*/
 .expandContent {
-    display: none;
+    display: block; 
     margin-left: 2vw;
 }
 .secondExpandContent {
-    display: none;
+    display: block;
     margin-left: 2vw;
-}
-.expand:hover .expandContent {
-    display: block;
-}
-.secondExpand:hover .secondExpandContent {
-    display: block;
 }
 
 /*GitHub siden*/
@@ -245,3 +252,274 @@ footer {
     box-shadow: 0px 4px 8px rgba(0, 0 , 0, 0,1);
     
 }
+
+/*
+*/
+/*Activity*/
+
+/*
+*/
+
+/* For å få hovedbilde på header*/
+/* css-koden fremviser hovedbilde blir plassert på header. Bildet er hentet fra 
+https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-2398220/*/
+
+
+.page-theme {
+    background-color:lightblue;
+}
+/* Koden fremviser possisjoneringen til UTlogoen*/
+.UTlogo {
+    position: absolute;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    width: 9%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* hele .navbar koden viser endringer og opprettelsen av nav bar. 
+kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
+
+
+.navbar ul { 
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    background-color: #004f35; 
+
+}
+
+.navbar a {
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    font-size: 1rem;
+    font-weight:600;
+    text-decoration:none;
+    padding: 0.6em;
+    display: block;
+    text-align: center;
+    border-radius: 9px;
+    margin-top: 0.2em;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+/*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
+.navbar li {
+    float: right;
+    margin: 3px;
+}
+
+/* Css-koden viser hover effect til menu baren når du hoverer over den*/
+.navbar a:hover {
+    background-color: rgba(0, 255, 170, 0.271);
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.mainImage {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 344px) and (max-width: 1368px) {
+    .title {
+        position: absolute;
+        top: 60%;
+    }
+}
+
+/* Endringer gjort for å posisjonere overskriften og author til innholdet*/
+.title {
+   
+    margin-left: 0.4em;
+    border-style: solid;
+    border-color: red;
+ }
+
+ /*størrelse og farge gjort i forbindelse med hovedtitelen til siden*/
+.title h1 {
+    display: block;
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*størrelse og farge gjort i forbindelse med author til siden*/
+.title a {
+    font-size: 1.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
+på toppen for å skille header med selve hovedteksten, margin-left for å possisjonere testen med bildene under, 
+tilslutt har det gjort endringer på selve teksten for å gjøre den mer tydelig for leseren å lese*/
+
+.mainArticle {
+    display: inline-block;
+    margin-left: 0.7em ;
+    font-weight: 400;
+    font-size: 1.2rem;  
+}
+
+
+/* i denne delen har vi lagt alle bildene i en container, og tilsatt flex og wrap for å få en smooth side 
+når man minsker siden, gap har blitt lagt til for å gi mellomrom mellom bildene. */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+
+/* bildene her er barnet til foreldren (.image-content), vi har brukt flex-grow for å spesifisere 
+hvor mye bildene skal vokse. i flex-basis så spesifiserer vi at vi ønsker 300px lengde av bilde. Width, 
+etter størrelse, margin for å gi mellomrom bildene slik at bildene fyller siden, 
+istendenfor at det blir mye plass/rom rundt bildene.
+ border, raduis pluss farge for å fremvise bildene mer tydlig.*/
+
+ .image { 
+    flex-grow: 1;
+    flex-basis: 300px;
+    width: 31% ;
+    margin: 5px;
+    border: 5px solid rgb(82, 133, 158);
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+
+.turRegler {
+    border-style: solid;
+    border-color: rgb(105, 97, 81);
+    background-color:rgb(213, 197, 165, 1);
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.turRegler h2, .turRegler h3, .turRegler p  {
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    /*.footer-section koden definerer hele footer-seksjonen og setter bakgrunnsfargen til mørk grønn (#004f35), 
+    tekstfargen til hvit og gir padding for rom rundt innholdet. Den sørger også for fleksibel layout som 
+    justerer elementene vertikalt med avstand mellom seg og sentrerer teksten. */
+
+
+    .footer-section {
+        background-color: #004f35;
+        color: white; 
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    /* Stilen til h2 i footeren definerer skriftstørrelse og margin for avstand under overskriften. */
+    .footer-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+/* .footer-info definerer containeren for link-seksjonene med innhold og om UT.no. 
+    Den bruker fleksibel layout for å spre elementene horisontalt. */
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
+    }
+    /* Stilen for tekstinnhold i både content-links og about-links gir venstrejustert tekst. */
+    .content-links, .about-links {
+        text-align: left;
+    }
+    /* Stilen til h3 i footeren setter skriftstørrelsen og marginen for underoverskrifter. */
+    .footer-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /* Stilen til ul i footeren fjerner standard punktlister og padding. */
+    .footer-info ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    /* Stilen til li i footeren gir avstand mellom listeelementene og definerer skriftstørrelsen. */
+    .footer-info li {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    /* .footer-info a stilen setter fargen på lenkene og fjerner understrekning. */
+    .footer-info a {
+        color: white; 
+        text-decoration: none;
+    }
+    /* Hover-effekt for lenkene i footeren gir understrekning når brukeren beveger musen over dem. */
+    .footer-info a:hover {
+        text-decoration: underline; 
+    }
+    /* .footer-bottom stilen definerer layouten til bunnteksten, 
+        inkludert skriftstørrelsen og lys grå tekstfarge. */
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+        color: lightgray; 
+    }
+
+    /* Stilen til version i footeren gir avstand for versjonsteksten. */
+    .footer-bottom .version {
+        margin-top: 5px;
+    }
+    /* .scroll-top-button stilen plasserer knappen for å rulle til toppen. 
+        Den har bakgrunnsfarge, runde hjørner og overgangseffekt. */
+    .scroll-top-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: #006747; 
+        border-style: solid;
+        border-color: white;
+        border-radius: 5px;
+    
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .scroll-top-button:hover {
+        background-color: #004f35; 
+    }
+    
+    
+
+
+
+
+
