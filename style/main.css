@@ -1,6 +1,8 @@
 /*
 */
 /*MAIN*/
+/* Alle kodene er felles for alle sidene, bortsett fra enkelte på Activity-siden.
+ */
 /*
 */
 
@@ -236,7 +238,11 @@ Lar derfor disse elementene være "display: block"*/
     margin-left: 2vw;
 }
 
-/*GitHub siden*/
+/*
+*/
+/*GitHub*/
+/*
+*/
 .commitFlexbox{
     display: flex;
     flex-direction: row;
@@ -256,42 +262,44 @@ Lar derfor disse elementene være "display: block"*/
 /*
 */
 /*Activity*/
-
 /*
 */
 
-/* For å få hovedbilde på header*/
-/* css-koden fremviser hovedbilde blir plassert på header. Bildet er hentet fra 
-https://www.pexels.com/photo/silhouette-of-person-standing-near-camping-tent-2398220/*/
-
-
-.page-theme {
+/*Her blir hele body gjort om til ønsket bakgrunnsfarge, det ble opprettet klasse fordi ellers blir fargene på alle sidene den samme */
+.pageTheme {
     background-color:lightblue;
 }
-/* Koden fremviser possisjoneringen til UTlogoen*/
+/*Her blir det lagt til bakgrunnsfarge til header, samtidig at det ble lagt til padding for å dekke til meny baren som linker til de andre sidene*/
+.UTMainHeader {
+    background-color: #10382d;
+    padding-bottom: 2.8em;
+}
+
+/* Koden fremviser possisjoneringen til UTlogoen. Logoen er hentet fra: 
+https://ut.no/turforslag/1112191571/fottur-til-hesten-421-moh-fra-botsheia*/
+
 .UTlogo {
     position: absolute;
+    top: 0;
     margin-left: 0.5em;
-    margin-top: 0.5em;
-    width: 9%;
+    margin-top: 0.8em;
+    width: 10%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-
-
-/* hele .navbar koden viser endringer og opprettelsen av nav bar. 
+/* hele koden her viser endringer gjort navbar. 
 kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 
-
-.navbar ul { 
+/* her er overordnede endringer gjort i navbar*/
+.navbar { 
     list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    background-color: #004f35; 
-
+   overflow: hidden;
+   margin-right: 0.2em;
+   margin-left: 2em;
 }
-
+/* Her viser endringer gjort i forbindelse med hver liste, farge rundt border, størrelse, 
+    type font, padding, lage rom inne/ute for hver liste osv. */
 .navbar a {
     display: flex;
     flex-wrap: wrap;
@@ -299,77 +307,68 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
     font-size: 1rem;
     font-weight:600;
     text-decoration:none;
-    padding: 0.6em;
+    padding: 0.7em;
     display: block;
     text-align: center;
     border-radius: 9px;
-    margin-top: 0.2em;
+    margin-top: 0.3em;
     border-style: solid;
-    font-family: Arial, Helvetica, sans-serif;;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/*her blir fokuset på å gjøre nav-bar flot og possisjonering*/
+/* her viser koden at listene skal flyte til høyre side, samtidig at hver av listene skal skape rom rundt listene*/
 .navbar li {
     float: right;
     margin: 3px;
 }
 
-/* Css-koden viser hover effect til menu baren når du hoverer over den*/
+/* Css-koden viser hover effect til menu baren når man hoverer over den*/
 .navbar a:hover {
     background-color: rgba(0, 255, 170, 0.271);
     text-decoration: underline;
     transition: all 0.3s;
 }
 
-.mainImage {
-    width: 100%;
-    object-fit: cover;
-}
-
-
-@media (min-width: 344px) and (max-width: 1368px) {
-    .title {
-        position: absolute;
-        top: 60%;
-    }
-}
-
 /* Endringer gjort for å posisjonere overskriften og author til innholdet*/
-.title {
-   
-    margin-left: 0.4em;
-    border-style: solid;
-    border-color: red;
+.UTHeading {
+    padding-top: 10em;
  }
 
- /*størrelse og farge gjort i forbindelse med hovedtitelen til siden*/
-.title h1 {
+ /*font (weight,size og familiy) og farge gjort i forbindelse med hovedtitelen til nettsiden. 
+ Margin for å skape rom rundt elementet*/
+.UTHeading h1 {
     display: block;
     color: white;
     font-weight: 400;
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.2em;
 }
-/*størrelse og farge gjort i forbindelse med author til siden*/
-.title a {
+/*font (size og familiy) og farge gjort i forbindelse med hovedtitelen til nettsiden. 
+ Margin for å skape rom rundt elementet*/
+.UTHeading a {
     font-size: 1.5rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.4em;
 }
 
 /* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
 på toppen for å skille header med selve hovedteksten, margin-left for å possisjonere testen med bildene under, 
-tilslutt har det gjort endringer på selve teksten for å gjøre den mer tydelig for leseren å lese*/
+tilslutt så gjorde vi endring på størrelsen, vekten og linje avstanden til teksten for å gjøre den lett leselig for brukeren */
 
 .mainArticle {
     display: inline-block;
     margin-left: 0.7em ;
     font-weight: 400;
-    font-size: 1.2rem;  
+    font-size: 1.2rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.6;
+    
 }
 
 
-/* i denne delen har vi lagt alle bildene i en container, og tilsatt flex og wrap for å få en smooth side 
-når man minsker siden, gap har blitt lagt til for å gi mellomrom mellom bildene. */
+/* i denne delen har vi lagt alle bildene i en container, og satt flex og wrap for å få en smooth side 
+når man minsker siden, gap har blitt brukt for å gi mellomrom mellom bildene. */
 
 .image-container {
     display: flex;
@@ -380,10 +379,8 @@ når man minsker siden, gap har blitt lagt til for å gi mellomrom mellom bilden
 
 
 /* bildene her er barnet til foreldren (.image-content), vi har brukt flex-grow for å spesifisere 
-hvor mye bildene skal vokse. i flex-basis så spesifiserer vi at vi ønsker 300px lengde av bilde. Width, 
-etter størrelse, margin for å gi mellomrom bildene slik at bildene fyller siden, 
-istendenfor at det blir mye plass/rom rundt bildene.
- border, raduis pluss farge for å fremvise bildene mer tydlig.*/
+hvor mye bildene skal vokse. flex-basis så spesifiserer vi startlengden til en fleksibel image. Width, 
+etter størrelse, border-raduis og farge for å fremvise bildene mer tydlig.*/
 
  .image { 
     flex-grow: 1;
@@ -395,40 +392,30 @@ istendenfor at det blir mye plass/rom rundt bildene.
     border-radius: 1em;
 }
 
-
+/*I denne delen har vi lagt til små ting som bakgrunnsfarge, border rundt teksten og margin for å lage litt mellomrom på toppen 
+altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for å støtte god leseopplevelse på mindre skjermer. */
 .turRegler {
     border-style: solid;
     border-color: rgb(105, 97, 81);
     background-color:rgb(213, 197, 165, 1);
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-}
+    margin-top: 1em;
+    padding-left: 2.5em;
+    line-height: 1.6; 
 
+}
+/*I denne delen ønsket vi gjøre fonten tykkere for å skille overskriften og underoverskrifter med teksten/listen(li)*/
 .turRegler h2, .turRegler h3, .turRegler p  {
-    font-weight: 700;
-    padding: 0.5em;
+    font-weight: 700; 
 }
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
+    /* koden fjerner ekstra plass rundt, intern plass rundt og inni*/
+    .UTMainFooter {
+        margin: 0;
+        padding: 0;
+    }
 
     /*.footer-section koden definerer hele footer-seksjonen og setter bakgrunnsfargen til mørk grønn (#004f35), 
     tekstfargen til hvit og gir padding for rom rundt innholdet. Den sørger også for fleksibel layout som 
     justerer elementene vertikalt med avstand mellom seg og sentrerer teksten. */
-
-
     .footer-section {
         background-color: #004f35;
         color: white; 
@@ -442,8 +429,9 @@ istendenfor at det blir mye plass/rom rundt bildene.
     }
     /* Stilen til h2 i footeren definerer skriftstørrelse og margin for avstand under overskriften. */
     .footer-section h2 {
-        font-size: 32px;
+        font-size: 1.5rem;
         margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
 /* .footer-info definerer containeren for link-seksjonene med innhold og om UT.no. 
@@ -460,8 +448,9 @@ istendenfor at det blir mye plass/rom rundt bildene.
     }
     /* Stilen til h3 i footeren setter skriftstørrelsen og marginen for underoverskrifter. */
     .footer-info h3 {
-        font-size: 20px;
+        font-size: 1.17rem;
         margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     /* Stilen til ul i footeren fjerner standard punktlister og padding. */
     .footer-info ul {
@@ -471,7 +460,7 @@ istendenfor at det blir mye plass/rom rundt bildene.
     /* Stilen til li i footeren gir avstand mellom listeelementene og definerer skriftstørrelsen. */
     .footer-info li {
         margin-bottom: 5px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* .footer-info a stilen setter fargen på lenkene og fjerner understrekning. */
@@ -487,7 +476,7 @@ istendenfor at det blir mye plass/rom rundt bildene.
         inkludert skriftstørrelsen og lys grå tekstfarge. */
     .footer-bottom {
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 1rem;
         color: lightgray; 
     }
 
@@ -505,11 +494,9 @@ istendenfor at det blir mye plass/rom rundt bildene.
         border-style: solid;
         border-color: white;
         border-radius: 5px;
-    
         color: white;
         padding: 10px 15px;
         cursor: pointer;
-        font-size: 20px;
         transition: background-color 0.3s ease;
     }
     
