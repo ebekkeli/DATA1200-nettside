@@ -2,37 +2,47 @@
 <html lang="no">
 <head>
     
-    <meta charset="utf-8"> 
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fottur til Hesten</title>
-    <link rel="stylesheet" href="style/activity.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
- <body>
-        <header>
-        <nav class="navbar">
-            <ul>
-    
+ <body class="pageTheme">
+        <header class="UTMainHeader">
+        <nav>
+            <ul class="navbar">
                 <li><a href="https://ut.no/kart#5.36/60.774/8.35">Kart</a></li>
                 <li><a href="https://ut.no/utforsker/norge/turforslag">Utforsker</a></li>
                 <li><a href="https://ut.no/mine-turer">Mine turer</a></li>
                 <li><a href="https://ut.no/huskelister">Huskelister</a></li>
                 <li><a href="https://ut.no/huskelister">Logg inn</a></li>
             </ul> 
-            <img class= UTlogo src ="/media/UT-logo.png" alt="UT.no logo"> </a>
-        </nav> 
-       </header>   
+            <!--Dropdown meny for navigasjon-->
+         <section class="dropDown">
+            <button class="dropDownButton">Meny</button>
+            <section class="dropDownContent">
+                <a href="index.html">Hjem</a>
+                <a href="github.html">GitHub</a>
+                <a href="accessibility.html">Tilgjengelighet</a>
+                <a href="activity.html">Aktivitet</a>
+            </section>
+        </section>
+        </nav>
+        <a href="https://ut.no/">
+            <img class=UTlogo src ="/media/UT-logo.png" alt="UT.no logo">
+            </a>
+       </header> 
 
        <main>
-        <section>
-                <img class="mainImage" src="/media/Header main image.jpg" alt="mann stående på toppen av en stein. Fotograf: James Wheeler"> 
-                <h1>Fottur til Hesten (421 moh.) fra Botsheia</h1>
-                <p> <a class="author" href="https://ut.no/gruppe/1598/stavanger-turistforening">Av: Stavanger Turistforening</a></p>
+
+        <section class="UTHeading">
+            <h1>Fottur til Hesten (421 moh.) fra Botsheia</h1>
+            <p><a href="https://ut.no/gruppe/1598/stavanger-turistforening">Av: Stavanger Turistforening</a></p>
             </section>
-        <article class="into">
-            
-            <h2>Utsikten fra Hesten 
-                er intet mindre enn formidabel! Her ser vi sørover</h2>
+
+        <article class="mainArticle">
+            <h2>Utsikten fra Hesten er intet mindre enn formidabel! Her ser vi sørover</h2>
             <p>Fjellet <a href="https://ut.no/omrade/124150/hesten-naturreservat/kart#11.95/58.96519/6.06686">Hesten</a> 
                 ligger 421 meter over havet i <a href="https://www.strand.kommune.no/">Strand kommune,</a> 
                 i Roglands største naturreservat med samme navn. </p>
@@ -62,11 +72,84 @@
             <img class ="image" src="/media/bilde 6.jpg" alt="Mjåvatnet sett fra oven. De mange krokete furutrærne i området er et kjennetegn for turen. Fotograf: Odd Inge Worsøe">
         </section>
         </article>
-        </main>
 
-        <footer>
+        <article class="turRegler">
+            <h2>10 Viktige Regler for en Trygg og Vellykket Fottur til Hesten (421 moh.) fra Botsheia</h2>
+            <section>
+                <h3>1. Planlegg ruten</h3>
+                <ul>
+                    <li>Gjør deg kjent med stien og terrenget på forhånd. Hesten kan ha krevende partier, så vit hva du går til.</li>
+                    <li>Sjekk hvor lang turen er, høydeforskjellen, og hvor lang tid det vil ta.</li>  
+                </ul>
+            </section>
+            <section>
+                <h3>2. Sjekk værmeldingen</h3>
+                <ul>
+                    <li>Været kan endre seg raskt, spesielt i fjellet. Unngå å gå hvis det er meldt dårlig vær som kraftig vind, regn eller tåke.</li>
+                    <li>Turvarslene finnes her: <a href="https://www.yr.no/nb">yr.no</a>, <a href="https://www.tv2.no/vaer"> tv2.no/vaer</a> og <a href="https://www.varsom.no/">varsom.no</a>.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>3. Ha riktig utstyr</h3>
+                <ul>
+                    <li>Bruk solide tursko med godt grep.</li>
+                    <li>Kle deg lagvis med klær som tåler vær og vind. Husk vindtett og vanntett jakke.</li>
+                    <li>Ta med nok mat, vann, en førstehjelpspakke, kart, kompass eller GPS, og en hodelykt.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>4. Følg merkede stier</h3>
+                <ul>
+                    <li>Hold deg til merkede løyper for å unngå skader og for å beskytte naturen. Ikke lag egne snarveier.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>5. Vær oppmerksom på naturen</h3>
+                <ul> 
+                    <li>Respekter plante- og dyrelivet. Ta med alt søppel tilbake, inkludert matrester.</li>
+                    <li>Unngå å forstyrre dyr, spesielt i hekke- og yngletiden.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>6. Kjenn din egen form</h3>
+                <ul>
+                    <li>Vurder formen din realistisk. Hesten kan være utfordrende for nybegynnere, så ta pauser underveis.</li>
+                    <li>Lytt til kroppen din, og snu hvis du føler deg utslitt eller hvis været blir dårlig.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>7. Ha kontaktmuligheter</h3>
+                <ul>
+                    <li>Informer noen om hvor du går, og når du planlegger å være tilbake.</li>
+                    <li>Sørg for å ha en fulladet mobiltelefon. Hvis dekning er dårlig, ha med en nødpeilesender om nødvendig.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>8. Start tidlig</h3>
+                <ul>
+                    <li>Begynn turen tidlig for å unngå å bli fanget av mørket. Solnedgangen kommer raskere enn du tror i fjellområder.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>9. Ta hensyn til andre turgåere</h3>
+                <ul>
+                    <li>Hils på folk du møter, og gi plass der stien er smal.</li>
+                    <li>Vis hensyn til de som går i et annet tempo.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>10. Sikkerhet først</h3>
+                <ul>
+                    <li>Hvis du møter bratte eller glatte partier, ta det rolig og vurder risikoen. Bruk staver for ekstra støtte om nødvendig.</li>
+                    <li>Ha alltid en plan for hva du gjør hvis noe går galt, inkludert nødnummersystem (112 i Norge).</li>
+                </ul>
+            </section>
+            <p>Å ta en tur til Hesten er en fantastisk opplevelse, men det krever respekt for naturen og forberedelser for en trygg tur. Kos deg!</p>   
+        </article>  
+        </main>
+        <footer class=UTMainFooter>
         <section class="footer-section">
-        <h2 class="info-text">Finn din tur blant tusenvis av turforslag og hytter i hele Norge</h2>
+        <h3 class="info-text">Finn din tur blant tusenvis av turforslag og hytter i hele Norge</h3>
         <section class="footer-info">
             <div class="content-links">
                 <h3>Innhold</h3>
