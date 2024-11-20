@@ -380,7 +380,7 @@ når man minsker siden, gap har blitt brukt for å gi mellomrom mellom bildene. 
 
 /* bildene her er barnet til foreldren (.image-content), vi har brukt flex-grow for å spesifisere 
 hvor mye bildene skal vokse. flex-basis så spesifiserer vi startlengden til en fleksibel image. Width, 
-etter størrelse, border-raduis og farge for å fremvise bildene mer tydlig.*/
+etter størrelse, border og farge for å fremvise bildene mer tydlig.*/
 
  .image { 
     flex-grow: 1;
