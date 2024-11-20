@@ -239,6 +239,14 @@ footer {
 }
 
 /*GitHub siden*/
+.commit-history{
+    margin: 25px;
+}
+.commit-history {
+    max-width: 70%;
+    align-items: center;
+}
+
 .commitFlexbox{
     display: flex;
     flex-direction: row;
@@ -248,9 +256,57 @@ footer {
     margin: 1rem 0;
 }
 
+
 .commitImage {
     width: 47%;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0 , 0, 0,1);
     
 }
+
+.changesFlexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+ 
+.changesImage{
+    width: 47%;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0 , 0, 0,1);
+}
+
+    /* Styling for "Benefits of Git & GitHub" section */
+.list-github {
+    background-color: #f8f9fa; /* Lys bakgrunnsfarge */
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Lett skygge for dybde */
+}
+
+.list-github h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-github ul {
+    list-style-type: none; /* Fjern standard bullet-points */
+    padding: 0;
+}
+
+.list-github li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+

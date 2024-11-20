@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style/main.css">
-    <meta charset="utf-8"> 
+  <link rel="stylesheet" href="style/main.css" />
+  <meta charset="utf-8" />
 </head>
-<html lang="no">   
-
-<body>
+<html lang="no">
+  <body>
     <header>
-        <a href="https://www.oslomet.no/">
-            <img src="media/oslomet-logo.png" alt="oslomet logo" class="logo">
-        </a>
-        <section class="dropDown">
-            <button class="dropDownButton">Meny</button>
-            <section class="dropDownContent">
-                <a href="index.html">Hjem</a>
-                <a href="github.html">GitHub</a>
-                <a href="accessibility.html">Tilgjengelighet</a>
-                <a href="activity.html">Aktivitet</a>
-            </section>
+      <a href="https://www.oslomet.no/">
+        <img src="media/oslomet-logo.png" alt="oslomet logo" class="logo" />
+      </a>
+      <section class="dropDown">
+        <button class="dropDownButton">Meny</button>
+        <section class="dropDownContent">
+          <a href="index.html">Hjem</a>
+          <a href="github.html">GitHub</a>
+          <a href="accessibility.html">Tilgjengelighet</a>
+          <a href="activity.html">Aktivitet</a>
         </section>
-        <input type="text" placeholder="søk" class="search">
-        <a href="https://oslomet.no/studier/studieoversikt" class="studieLink">Studieoversikt</a>
+      </section>
+      <input type="text" placeholder="søk" class="search" />
+      <a href="https://oslomet.no/studier/studieoversikt" class="studieLink"
+        >Studieoversikt</a
+      >
     </header>
     <main>
-        <h1>Collaboration in GitHub</h1>
-        
-        <section>
-            <h2>Commit History</h2>
-            <p>Commit history in GitHub allows team members to track changes incrementally, enabling 
-                a clear view of modifications made over time. Below are examples of how a collaborative project
-                 evolves through small, frequent commits.</p>
-                 <div class="commitFlexbox">
-            <img src="media/GitHubEndringer.png" alt="Example of commit history" class="commitImage">
-            <img src="media/GitHubEndringer2.png" alt="Another example of commit history" class="commitImage">
-            </div>
-        </section>
+      <h1>Collaboration in GitHub</h1>
 
-        <section>
-            <h2>Specific Changes</h2>
-            <p>In GitHub, specific changes in each commit provide transparency, showing exactly what has been modified. This helps team members understand contributions and resolve conflicts efficiently.</p>
-            <img src="media/change-example-1.png" alt="Example of a specific change in commit" class="commitImage">
-            <img src="media/change-example-2.png" alt="Another specific change example in commit" class="commitImage">
-        </section>
+      <section class="commit-history">
+        <h2>Commit History</h2>
+        <p>
+          Commit history in GitHub allows team members to track changes
+          incrementally, enabling a clear view of modifications made over time.
+          Below are examples of how a collaborative project evolves through
+          small, frequent commits.
+        </p>
+        <div class="commitFlexbox">
+          <img
+            src="media/GitHubcommit.png"
+            alt="Example of commit history"
+            class="commitImage"
+          />
+          <img
+            src="media/GitHubcommit2.png"
+            alt="Another example of commit history"
+            class="commitImage"
+          />
+        </div>
+      </section>
 
-        <section>
-            <h2>Benefits of Git & GitHub</h2>
-            <ul>
-                <li>Version control allows tracking and reverting changes if needed.</li>
-                <li>Facilitates collaboration by allowing multiple team members to work simultaneously.</li>
-                <li>Enables branch management, which is essential for testing features without affecting the main codebase.</li>
-            </ul>
-        </section>
+      <section>
+        <h2>Specific Changes</h2>
+        <p>
+          In GitHub, specific changes in each commit provide transparency,
+          showing exactly what has been modified. This helps team members
+          understand contributions and resolve conflicts efficiently.
+        </p>
+        <div class="changesFlexbox">
+          <img
+            src="media/githubChanges.png"
+            alt="Example of a specific change in commit"
+            class="commitImage"
+          />
+          <img
+            src="media/githubChanges2.png"
+            alt="Another specific change example in commit"
+            class="commitImage"
+          />
+        </div>
+      </section>
+
+      <section class="list-github">
+        <h2>Benefits of Git & GitHub</h2>
+        <ul>
+          <li>
+            <b>Control and Collaboration:</b> GitHub is built on Git, a
+            powerful version control system that allows multiple people to work
+            on the same project simultaneously. Changes are tracked, making it
+            easy to collaborate, view differences, and merge updates without
+            overwriting others' work.
+          </li>
+          <li>
+            Facilitates collaboration by allowing multiple team members to work
+            simultaneously.
+          </li>
+          <li>
+            Enables branch management, which is essential for testing features
+            without affecting the main codebase.
+          </li>
+        </ul>
+      </section>
     </main>
+  </body>
 
-    </body> 
+  <footer>
+    <h2 class="footerTitle">Hold deg oppdatert på hva som skjer på OsloMet.</h2>
 
-   
-   
-   
-    <footer>
-        
-        <h2 class="footerTitle">
-            Hold deg oppdatert på hva som skjer på OsloMet.
-        </h2>
-        
-        <a href="https://oslomet.no">
-            <button class="nyhetsBrev">Abonner på vårt nyhetsbrev!</button>
+    <a href="https://oslomet.no">
+      <button class="nyhetsBrev">Abonner på vårt nyhetsbrev!</button>
+    </a>
+
+    <hr class="footerLine" />
+
+    <section>
+      <img
+        src="media/logo-footer.svg"
+        alt="logo-footer.svg"
+        class="logoFooter"
+      />
+      <br />
+      <br />
+      <section class="text">
+        <p>Postboks 4, St. Olavs plass</p>
+        <p>0130 Oslo</p>
+        <p>Tlf.: 67 23 50 00</p>
+        <a class="link" href="https://oslomet.no">
+          <span>Kontakt oss</span>
         </a>
-        
-        <hr class="footerLine">
-        
-        <section>
-            <img src="media/logo-footer.svg" alt="logo-footer.svg" class="logoFooter">
-            <br>
-            <br>
-            <section class="text">
-                <p>Postboks 4, St. Olavs plass</p>
-                <p>0130 Oslo</p>
-                <p>Tlf.: 67 23 50 00 </p>
-                <a class="link" href="https://oslomet.no">
-                    <span>Kontakt oss</span>
-                </a>
-
-            </section>
-        </section>
-        <section class="footerNavigationLinks">
-            <a class="link italic" href="https://oslomet.no">English</a><br>
-            <a class="link italic" href="https://oslomet.no">Alumni</a><br>
-            <a class="link italic" href="https://oslomet.no">Ansatteoversikt</a><br>
-            <a class="link italic" href="https://oslomet.no">Arrangementoversikt</a><br>
-            <a class="link italic" href="https://oslomet.no">For ansatte</a><br>
-            <a class="link italic" href="https://oslomet.no">For studenter</a><br>
-            <a class="link italic" href="https://oslomet.no">Ledige stillinger</a><br>
-            <a class="link italic" href="https://oslomet.no">Personvernserklæring og informasjonskapslar</a><br>
-            <a class="link italic" href="https://oslomet.no">Pressekontakt</a><br>
-            <a class="link italic" href="https://oslomet.no">Tilgjengeligheitserklæring</a><br>
-            <a class="link italic" href="https://oslomet.no">Admin</a>
-
-        </section>
-    </footer>
+      </section>
+    </section>
+    <section class="footerNavigationLinks">
+      <a class="link italic" href="https://oslomet.no">English</a><br />
+      <a class="link italic" href="https://oslomet.no">Alumni</a><br />
+      <a class="link italic" href="https://oslomet.no">Ansatteoversikt</a><br />
+      <a class="link italic" href="https://oslomet.no">Arrangementoversikt</a
+      ><br />
+      <a class="link italic" href="https://oslomet.no">For ansatte</a><br />
+      <a class="link italic" href="https://oslomet.no">For studenter</a><br />
+      <a class="link italic" href="https://oslomet.no">Ledige stillinger</a
+      ><br />
+      <a class="link italic" href="https://oslomet.no"
+        >Personvernserklæring og informasjonskapslar</a><br/>
+      <a class="link italic" href="https://oslomet.no">Pressekontakt</a><br />
+      <a class="link italic" href="https://oslomet.no"
+        >Tilgjengeligheitserklæring</a
+      ><br />
+      <a class="link italic" href="https://oslomet.no">Admin</a>
+    </section>
+  </footer>
 </html>
