@@ -157,6 +157,32 @@ footer {
     display: flex;
     margin-left: 22vw;
 }
+@media only screen and (max-width: 800px) {
+    .search {
+        float: left;
+        margin-left: 2vw;
+    }
+    .logo {
+        margin-left: 2vw;
+    }
+    .studieLink {
+        margin-left: 2vw;
+        margin-top: 60px;
+    }
+    .footerNavigationLinks {
+        margin-top: 50px;
+        float: left;
+    }
+    .logoFooter {
+        margin-left: 0px;
+    }
+    .footerLine {
+        width: 100%;
+    }
+    .nyhetsBrev {
+        float: left;
+    }
+}
 
 /*
 */
@@ -237,7 +263,53 @@ Lar derfor disse elementene være "display: block"*/
     margin-left: 2vw;
 }
 
+/*Style for særegne link-elementer som man finner i f.eks. "Videre studiemuligheter ved OsloMet*/
+.boxGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100vw));
+    background-color: #fff;
+}
+.boxItem {
+    margin-left: 0vw;
+    margin-right: 20vw;
+    border-bottom: black solid 2px;
+}
+.fagligLeder {
+    width: 4vw;
+    margin-left: 10px;
+    display: flex;
+}
+.lederText {
+    margin-left: 100px;
+    margin-top: -120px;
+}
+.smallMarginRight {
+    margin-right: 2vw;
+}
+@media only screen and (max-width: 800px) {
+    body .text {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .expandButtons {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .expand {
+        width: 90vw;
+    }
+    .marginGrid {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .fagligLeder {
+        width: 18vw;
+    }
+}
+/*
+*/
 /*GitHub siden*/
+/*
+*/
 
 .github-page {
     max-width: 800px; /* Begrens bredden kun på GitHub-siden */
