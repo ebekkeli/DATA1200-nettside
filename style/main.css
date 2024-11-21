@@ -304,23 +304,36 @@ Lar derfor disse elementene være "display: block"*/
 }
 
 /*Studenthistorier*/
+.studHistHeader {
+    margin-left: 10vw;
+}
 .studHistContainer {
     background-color: lightblue;
-    width: 30vw;
+    width: 40vw;
     padding: 0px;
     margin-bottom: 50px;
     padding-top: 20px;
+    margin-left: 10vw;
 }
 .studentHistorier {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,100vw));
     column-width: 100px;
-    
 }
 .happyStudents {
     width: 100%;
     height: 100%;
-    float: right;    
+    float: right;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .05s ease-in-out;
+	transition: .05s ease-in-out;   
+}
+.happyStudents:hover {
+    -webkit-transform: scale(1.01);
+	transform: scale(1.01);
+	-webkit-transition: .05s ease-in-out;
+	transition: .05s ease-in-out;
 }
 .studHistText {
     margin-left: 2vw;
