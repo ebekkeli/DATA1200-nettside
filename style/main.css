@@ -340,6 +340,15 @@ Lar derfor disse elementene være "display: block"*/
     margin-top: 20px;
     margin-right: 2vw;
 }
+.flereStudHist {
+    background-color: lightblue;
+    width: 20vw;
+    padding: 10px;
+    margin-left: 20vw;
+}
+.flereStudHistText {
+    margin-left: 20px;
+}
 @media only screen and (max-width: 800px) {
     .text {
         margin-left: 2vw;
