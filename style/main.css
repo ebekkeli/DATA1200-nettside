@@ -365,6 +365,12 @@ Lar derfor disse elementene være "display: block"*/
         margin-left: 2vw;
         margin-right: 2vw;
     }
+    .studHistContainer {
+        width: 80vw;
+    }
+    .flereStudHist {
+        width: 55vw;
+    }
 }
 
 /*
