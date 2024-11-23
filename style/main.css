@@ -213,6 +213,10 @@ footer {
         margin-left: 2vw;
         margin-right: 2vw;
     }
+    .logoFooter {
+        margin-left: 2vw;
+        width: 300px;
+    }
 }
 
 /*
@@ -382,7 +386,10 @@ Lar derfor disse elementene være "display: block"*/
     .flereStudHist {
         width: 55vw;
     }
-    
+    .matmodVideo {
+        width: 80%;
+        height: 250px;
+    }
 }
 
 /*
