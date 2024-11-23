@@ -209,6 +209,10 @@ footer {
         margin-top: 0px;
         margin-bottom: 20px;
     }
+    .text {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }
 
 /*
@@ -359,11 +363,8 @@ Lar derfor disse elementene være "display: block"*/
 .flereStudHistText {
     margin-left: 20px;
 }
+/*Media query for elementer i index.html*/
 @media only screen and (max-width: 800px) {
-    .text {
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
     .expandButtons {
         margin-left: 2vw;
         margin-right: 2vw;
