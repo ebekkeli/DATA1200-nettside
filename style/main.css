@@ -48,6 +48,11 @@ dd {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
 }
+label {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
 .text {
     margin-left: 20vw;
 }

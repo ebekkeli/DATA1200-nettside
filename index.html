@@ -19,9 +19,13 @@
                 <a href="accessibility.html">Tilgjengelighet</a>
                 <a href="activity.html">Aktivitet</a>
             </section>
-        <!--Søkeboks i header-->
         </section>
-        <input type="text" placeholder="søk" class="search">
+        <!--Søkeboks i header-->
+        <section class="search">
+            <label for="search">Søk:</label>
+            <input type="text" placeholder="" id="search">
+        </section>
+        
         <!--Link til studieoversikt under Oslomet logo-->
         <p><a href="https://oslomet.no/studier/studieoversikt" class="studieLink link bold">Studieoversikt</a></p>
     </header>
@@ -30,9 +34,11 @@
         <!--Inline Frame som brukes for å vise til nettsted for MatMod video i nettsiden vår.
         Gjorde det slik fordi vi ikke klarte å laste ned videoen.
         "Browser not compatible" vises hvis inline frame ikke fungerer i brukeren sin nettleser-->
-        <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" 
-        class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo">Browser not compatible</iframe>
-        
+        <section>
+            <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" 
+            class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo" id="matModVideo">Browser not compatible</iframe>
+        </section>
+
         <!--Tittel-->
         <h1 class="text">
             Matematisk modellering og datavitenskap – ingeniør
