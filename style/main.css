@@ -224,7 +224,7 @@ footer {
 }
 .infoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 14vw));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     background-color: lightblue;
     padding-bottom: 20px;
 }
@@ -381,35 +381,7 @@ Lar derfor disse elementene være "display: block"*/
     .flereStudHist {
         width: 55vw;
     }
-    .github-page {
-        padding: 10px;
-    }
-
-    /* Stabler bilder vertikalt i commit-seksjonene */
-    .commitFlexbox, .changesFlexbox {
-        flex-direction: column; /* Stabler bildene */
-        gap: 1rem; /* Avstand mellom bilder */
-    }
-
-    /* Gjør bildene full bredde */
-    .commitImage, .changesImage {
-        width: 100%; /* Bildene fyller skjermen */
-        margin: 0 auto; /* Sentrerer bildene */
-    }
-
-    /* Juster listeelementer for "Benefits of Git & GitHub" */
-    .list-github {
-        padding: 10px; /* Redusert padding */
-    }
-    .list-github h2 {
-        font-size: 1.5rem; /* Mindre overskrift */
-        text-align: center; /* Hold overskriften sentrert */
-    }
-
-    .list-github li {
-        font-size: 1rem; /* Mindre tekst */
-        line-height: 1.5; /* Økt lesbarhet */
-    }
+    
 }
 
 /*
@@ -485,6 +457,37 @@ Lar derfor disse elementene være "display: block"*/
     position: relative;
     padding-left: 1.5rem;
     line-height: 1.6;
+}
+@media only screen and (max-width: 800px) {
+    .github-page {
+        padding: 10px;
+    }
+
+    /* Stabler bilder vertikalt i commit-seksjonene */
+    .commitFlexbox, .changesFlexbox {
+        flex-direction: column; /* Stabler bildene */
+        gap: 1rem; /* Avstand mellom bilder */
+    }
+
+    /* Gjør bildene full bredde */
+    .commitImage, .changesImage {
+        width: 100%; /* Bildene fyller skjermen */
+        margin: 0 auto; /* Sentrerer bildene */
+    }
+
+    /* Juster listeelementer for "Benefits of Git & GitHub" */
+    .list-github {
+        padding: 10px; /* Redusert padding */
+    }
+    .list-github h2 {
+        font-size: 1.5rem; /* Mindre overskrift */
+        text-align: center; /* Hold overskriften sentrert */
+    }
+
+    .list-github li {
+        font-size: 1rem; /* Mindre tekst */
+        line-height: 1.5; /* Økt lesbarhet */
+    }
 }
 
 /*
