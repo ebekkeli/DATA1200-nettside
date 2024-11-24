@@ -749,7 +749,8 @@ altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for
 /*Grid for accessibility er litt annerledes enn grid ellers*/
 .accessibilityGrid {
     background-color: white;
-    grid-template-columns: repeat(auto-fit, minmax(650px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 300px));
+    margin-left:10vw ;
 }
 
 /*Egen vidde på tekst*/
@@ -757,9 +758,18 @@ altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for
     width: 60vw;
 }
 
+.acessibilityItem {
+    margin-bottom: 20px;
+}
+
 /*Gjør at bildene i grid er mindre når skjermen er mindre slik at bildene ikke blir større enn skjermen*/
 @media only screen and (max-width: 800px) {
     .accessibilityGrid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+        margin: 2vw;
+    }
+    .accessibilityText {
+        width: 90vw;
     }
 }
+

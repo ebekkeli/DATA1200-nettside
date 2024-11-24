@@ -33,14 +33,14 @@
             <h1 class="text accessibilityText">Tilgjengelighet og universell design på nettsidene våre </h1>
             <p class="text accessibilityText">Vi har jobbet for å gjøre nettsidene våre tilgjengelig for alle brukere.
                 Vi skal videre diskutere tilgjengelighet på index og activity sidene. 
-                Vi dokumtenterte bare testingen for disse sidene fordi det som ble vist i fra resultetet 
+                Vi dokumtenterte bare testingen for disse sidene fordi det som ble vist ifra resultetet 
                 i index siden gikk igjen i GitHub og tilgjengelighet siden.
     
             <section>
                 <h2 class="text accessibilityText">Automatisk testing</h2>
                 <p class="text accessibilityText">Vi brukte verktøyet Lighthouse for å sjekke tilgjengeligheten. 
                     Bildene viser resultatet fra Lighthouse for både desktop og mobil.</p>
-                <section class="infoGrid marginGrid accessibilityGrid">
+                <section class="infoGrid accessibilityGrid">
                     <img src="/media/Lighthouse Report - Index (Desktop).png" alt="Lighthouse Rapport - Index (Desktop)" class="item">
                     <img src="/media/Lighthouse Report - Index (Mobile).png" alt="Lighthouse Rapport - Index (Mobil)" class="item">
                     <img src="/media/Passed audits for Index (Desktop).jpg" alt="Bestått revisjoner for Index (desktop)" class="item">
@@ -51,10 +51,33 @@
                     <img src="/media/Passed audits for Activitty (mobile).jpg" alt="Bestått revisjoner for Activity (mobil)" class="item">
                  </section>
             </section>
+
+            <section>
+                <h2 class="text">Feil som oppsto</h2>
+                <p class="text">
+                    I index.css under Studiets oppbygging. Bruker vi "H1" når for studieårene, 
+                    mens vi bruker "H2" for semesterene. Dette var et bevist valg utifra hvordan vi valgte 
+                    å style våre headers. Det så bedre ut syntes vi med "H3" fremfor "H2". 
+                    Dette kommer opp som en feil i Lighthouse da de forventer at headers er sekvensielle.
+                </p>
+                <p>
+                    På activity siden ble det oppdaget at mellomromene mellom lenkene 
+                    i footer ikke var vide nok for touchskjerm. Dette dukker også opp som et problem i lighthouse.
+                </p>
+            </section>
     
             <section class="text accessibilityText">
                 <h2>Manuell testing</h2>
-                <p>Vi har sjekket koden for ting en automatisk test ikke oppdager. Vi har sikret at:</p>
+                <p>Vi har sjekket koden for ting en automatisk test ikke oppdager. Vi har tatt hensyn 
+                    til tilgjengelighet ved å sikre at hover-effektene fungerer godt med mus, 
+                    samtidig som vi har testet om det er mulig å bevege seg gjennom alle interaktive elementer 
+                    (knapper, lenker osv.). Vi har sørget for at alternative tekster brukt for bildene 
+                    sammensvarer med hverandre, slik at det ikke skaper forvirringer. Vi har sjekket at 
+                    marginer for å rette fokus, slik at det blir brukervennlig.  I tillegg har vi sjekket at vi
+                     har god tekst oppsett med tanke på skrifttype, god linje avstand, og god tekstfarge 
+                     i forhold til bakgrunnen. Sist, men ikke minst har vi sørget for å sjekke at dropdown meny
+                    som lenker til de andre sidene gir lett og brukervennlig navigasjon av nettsiden vår. 
+                 </p>
             </section>
     
             <section class="text accessibilityText">
@@ -63,7 +86,8 @@
                 <p>Vi har valgt akrylfarger med god kontrast i header for å sikre at teksten er lett å lese.</p>
     
                 <p>Vi har benyttet oss av semantiske HTML-elementer for å strukturere innholdene og gjøre det
-                    enklere å navigere, både for brukere og for de som ønsker å forbedre koden i framtiden.</p>
+                    enklere å navigere, både for brukere og for de som ønsker å forbedre koden i framtiden. 
+                    Dette blir illustrert i bildet nedenfor.</p>
     
                 <p>Vi har godt med mellomrom mellom lenker. God mellomrom mellom lenker reduserer risikoen for
                     feilklikk og gjør nettsiden mer brukervennlig, spesilet for de med motoriske utfordringer.</p>
@@ -84,7 +108,11 @@
     
                 <p>For alle bilder har vi lagt til alternative tekster. Disse sørger for at brukere som ikke kan
                     se bildene, enten på grunn av tekniske problemer som dårlig internettforbindelse eller 
-                    andre ting, får beskrivelse av innholdet.</p>
+                    andre ting, får beskrivelse av innholdet. Dette blir illustrert i bildet nedenfor.</p>
+                <section class="infoGrid accessibilityGrid">
+                <img class="item acessibilityItem" src="/media/text2.png" alt="Eksempel på god bruk av semantikk i koden">
+                <img class="item acessibilityItem" src="/media/Alt text.png" alt="Eksempel på bruk av Alternativ tekst i bilde">
+                </section>
             </section>
         </article>
  
