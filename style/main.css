@@ -43,6 +43,16 @@ h4 {
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
+dd {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+label {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
 .text {
     margin-left: 20vw;
 }
@@ -199,6 +209,14 @@ footer {
         margin-top: 0px;
         margin-bottom: 20px;
     }
+    .text {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .logoFooter {
+        margin-left: 2vw;
+        width: 300px;
+    }
 }
 
 /*
@@ -214,7 +232,7 @@ footer {
 }
 .infoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 14vw));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     background-color: lightblue;
     padding-bottom: 20px;
 }
@@ -349,11 +367,8 @@ Lar derfor disse elementene være "display: block"*/
 .flereStudHistText {
     margin-left: 20px;
 }
+/*Media query for elementer i index.html*/
 @media only screen and (max-width: 800px) {
-    .text {
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
     .expandButtons {
         margin-left: 2vw;
         margin-right: 2vw;
@@ -371,34 +386,9 @@ Lar derfor disse elementene være "display: block"*/
     .flereStudHist {
         width: 55vw;
     }
-    .github-page {
-        padding: 10px;
-    }
-
-    /* Stabler bilder vertikalt i commit-seksjonene */
-    .commitFlexbox, .changesFlexbox {
-        flex-direction: column; /* Stabler bildene */
-        gap: 1rem; /* Avstand mellom bilder */
-    }
-
-    /* Gjør bildene full bredde */
-    .commitImage, .changesImage {
-        width: 100%; /* Bildene fyller skjermen */
-        margin: 0 auto; /* Sentrerer bildene */
-    }
-
-    /* Juster listeelementer for "Benefits of Git & GitHub" */
-    .list-github {
-        padding: 10px; /* Redusert padding */
-    }
-    .list-github h2 {
-        font-size: 1.5rem; /* Mindre overskrift */
-        text-align: center; /* Hold overskriften sentrert */
-    }
-
-    .list-github li {
-        font-size: 1rem; /* Mindre tekst */
-        line-height: 1.5; /* Økt lesbarhet */
+    .matmodVideo {
+        width: 80%;
+        height: 250px;
     }
 }
 
@@ -476,6 +466,37 @@ Lar derfor disse elementene være "display: block"*/
     padding-left: 1.5rem;
     line-height: 1.6;
 }
+@media only screen and (max-width: 800px) {
+    .github-page {
+        padding: 10px;
+    }
+
+    /* Stabler bilder vertikalt i commit-seksjonene */
+    .commitFlexbox, .changesFlexbox {
+        flex-direction: column; /* Stabler bildene */
+        gap: 1rem; /* Avstand mellom bilder */
+    }
+
+    /* Gjør bildene full bredde */
+    .commitImage, .changesImage {
+        width: 100%; /* Bildene fyller skjermen */
+        margin: 0 auto; /* Sentrerer bildene */
+    }
+
+    /* Juster listeelementer for "Benefits of Git & GitHub" */
+    .list-github {
+        padding: 10px; /* Redusert padding */
+    }
+    .list-github h2 {
+        font-size: 1.5rem; /* Mindre overskrift */
+        text-align: center; /* Hold overskriften sentrert */
+    }
+
+    .list-github li {
+        font-size: 1rem; /* Mindre tekst */
+        line-height: 1.5; /* Økt lesbarhet */
+    }
+}
 
 /*
 */
@@ -531,7 +552,6 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
     border-radius: 9px;
     margin-top: 0.3em;
     border-style: solid;
-    font-family: Arial, Helvetica, sans-serif;
 }
 /* her viser koden at listene skal flyte til høyre side, samtidig at hver av listene skal skape rom rundt listene*/
 .navbar li {
@@ -548,40 +568,35 @@ kilden hentet fra: https://www.youtube.com/watch?v=f3uCSh6LIY0*/
 
 /* Endringer gjort for å posisjonere overskriften og author til innholdet*/
 .UTHeading {
-    padding-top: 10em;
+    margin: 10px;
+    margin-top: 100px;
+    margin-bottom: 40px; 
  }
 
  /*font (weight,size og familiy) og farge gjort i forbindelse med hovedtitelen til nettsiden. 
  Margin for å skape rom rundt elementet*/
 .UTHeading h1 {
     display: block;
-    color: white;
     font-weight: 400;
     font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 0.2em;
 }
 /*font (size og familiy) og farge gjort i forbindelse med hovedtitelen til nettsiden. 
  Margin for å skape rom rundt elementet*/
 .UTHeading a {
     font-size: 1.5rem;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
     margin-left: 0.4em;
 }
 
-/* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, vi har lagt til margin
-på toppen for å skille header med selve hovedteksten, margin-left for å possisjonere testen med bildene under, 
-tilslutt så gjorde vi endring på størrelsen, vekten og linje avstanden til teksten for å gjøre den lett leselig for brukeren */
+/* I denne delen av koden har vi brukt inline-block for å fjerne unødvendig spacing, margin for å skape rom, 
+tilslutt så gjorde vi endring på font vekten og linje avstanden til teksten for å gjøre den lett leselig for brukeren */
 
 .mainArticle {
     display: inline-block;
-    margin-left: 0.7em ;
+    margin: 20px;
     font-weight: 400;
-    font-size: 1.2rem; 
-    font-family: Arial, Helvetica, sans-serif; 
     line-height: 1.6;
-    
 }
 
 /* i denne delen har vi lagt alle bildene i en container, og satt flex og wrap for å få en smooth side 
@@ -616,6 +631,7 @@ altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for
     background-color:rgb(213, 197, 165, 1);
     margin-top: 1em;
     padding-left: 2.5em;
+    padding-right: 1em;
     line-height: 1.6; 
 
 }
@@ -647,7 +663,6 @@ altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for
     .footer-section h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
-        font-family: Arial, Helvetica, sans-serif;
     }
     
 /* .footer-info definerer containeren for link-seksjonene med innhold og om UT.no. 
@@ -666,7 +681,6 @@ altså mellom bildene og teksten. Vi har brukt litt padding på venstre side for
     .footer-info h3 {
         font-size: 1.17rem;
         margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
     }
     /* Stilen til ul i footeren fjerner standard punktlister og padding. */
     .footer-info ul {

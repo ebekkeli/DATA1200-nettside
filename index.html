@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style/main.css">
-    <script src="script/onclick.js"></script>
     <title>OsloMet</title>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 <html lang="no">
     <header>
@@ -20,9 +19,13 @@
                 <a href="accessibility.html">Tilgjengelighet</a>
                 <a href="activity.html">Aktivitet</a>
             </section>
-        <!--Søkeboks i header-->
         </section>
-        <input type="text" placeholder="søk" class="search">
+        <!--Søkeboks i header-->
+        <section class="search">
+            <label for="search">Søk:</label>
+            <input type="text" placeholder="" id="search">
+        </section>
+        
         <!--Link til studieoversikt under Oslomet logo-->
         <p><a href="https://oslomet.no/studier/studieoversikt" class="studieLink link bold">Studieoversikt</a></p>
     </header>
@@ -31,9 +34,11 @@
         <!--Inline Frame som brukes for å vise til nettsted for MatMod video i nettsiden vår.
         Gjorde det slik fordi vi ikke klarte å laste ned videoen.
         "Browser not compatible" vises hvis inline frame ikke fungerer i brukeren sin nettleser-->
-        <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" 
-        class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo">Browser not compatible</iframe>
-        
+        <section>
+            <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" 
+            class="matmodVideo" title="Matematisk modellering video fra oslomet" alt="MatModVideo" id="matModVideo">Browser not compatible</iframe>
+        </section>
+
         <!--Tittel-->
         <h1 class="text">
             Matematisk modellering og datavitenskap – ingeniør
@@ -716,13 +721,19 @@
             </section>
         </section>
 
+        <!--Info om faget-->
         <section class="text">
+            <!--Studiested-->
             <h1>Studiested</h1>
             <p><a href="https://www.oslomet.no/om/studiested-pilestredet" class="link bold">Studiested Pilestredet</a></p>
             <br>
+
+            <!--Link til kontaktskjema for videre spørsmål-->
             <h1>Spørsmål om utdanningen?</h1>
             <p><a href="https://www.oslomet.no/kontaktskjema#For%20utdanningss%C3%B8kere?faculty=Fakultet%20for%20teknologi,%20kunst%20og%20design" class="link bold">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a></p>
             <br>
+
+            <!--Faglig leder-->
             <h1>Faglig leder</h1>
             <section class="infoGrid boxGrid">
                 <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="item boxItem link">
@@ -775,6 +786,8 @@
                 </a>
             </section>
         </section>
+
+        <!--Student historier helt nederst på siden-->
         <section class="text">
             <h1 class="studHistHeader">Student historier</h1>
             <section class="studHistContainer">
