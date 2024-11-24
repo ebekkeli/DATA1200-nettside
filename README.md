@@ -14,7 +14,7 @@ Nettside for oppgave i DATA1200
 
 
 <ins>*Erik Bekkeli*</ins>  
-- Header og Footer delt mellom index, github og accessibility inkludert meny knapp.
+- Header og Footer delt mellom index, github og accessibility.
 - Style for Main delen av main.css og Index delen av main.css
 - Og Index.html    
 
