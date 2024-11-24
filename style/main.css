@@ -159,6 +159,7 @@ footer {
     float: right;
     margin-right: 20vw;
     margin-top: -220px;
+    line-height: 1.6rem;
 }
 .linkTo {
     color: black;
